@@ -20,6 +20,11 @@ public class Story {
         this.updatedAt = updatedAt;
     }
 
+    public Story(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
+
     // getters and setters
     public Long getStoryId() {
         return storyId;
@@ -59,6 +64,12 @@ public class Story {
 
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    @Override
+    public String toString() {
+        return "Story [storyId=" + storyId + ", title=" + title + ", description=" + description + ", createdAt="
+                + createdAt + ", updatedAt=" + updatedAt + "]";
     }
 
 }

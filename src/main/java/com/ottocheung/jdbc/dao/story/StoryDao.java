@@ -19,4 +19,6 @@ public interface StoryDao {
     public List<Story> getAllStories() throws SQLException;
 
     public List<Story> getStoriesByTitle(String title) throws SQLException;
+
+    public void deleteAllStories() throws SQLException;
 }
